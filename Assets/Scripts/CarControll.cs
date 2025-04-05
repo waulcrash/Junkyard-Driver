@@ -1,81 +1,55 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class CarControl : MonoBehaviour
 {
-    public float motorTorque = 2000;
-    public float brakeTorque = 2000;
-    public float maxSpeed = 40;
-    public float steeringRange = 30;
-    public float steeringRangeAtMaxSpeed = 10;
-    public float centreOfGravityOffset = -1f;
+    private Rigidbody rigidBody;
+    [SerializeField] private Transform centerOfMass;
+    [SerializeField] private Wheel[] wheels;
 
-    WheelControl[] wheels;
-    Rigidbody rigidBody;
+    [SerializeField] private int motorForce;
+    [SerializeField] private int breakForce;
 
-    // Start is called before the first frame update
+    private float vInput;
+    private float hInput;
+    private float breakInput;
+
+    private float speed;
+
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
-
-        // Adjust center of mass vertically, to help prevent the car from rolling
-        rigidBody.centerOfMass += Vector3.up * centreOfGravityOffset;
-
-        // Find all child GameObjects that have the WheelControl script attached
-        wheels = GetComponentsInChildren<WheelControl>();
+        rigidBody.centerOfMass = centerOfMass.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        speed = rigidBody.linearVelocity.magnitude;
 
-        float vInput = Input.GetAxis("Vertical");
-        float hInput = Input.GetAxis("Horizontal");
+        hInput = Input.GetAxis("Horizontal");
+        vInput = Input.GetAxis("Vertical");
 
-        // Calculate current speed in relation to the forward direction of the car
-        // (this returns a negative number when traveling backwards)
-        float forwardSpeed = Vector3.Dot(transform.forward, rigidBody.velocity);
+        float forwardSpeed = Vector3.Dot(transform.forward, rigidBody.linearVelocity);
 
+        breakInput = (forwardSpeed < -0.5f && vInput > 0) || (forwardSpeed > 0.5f && vInput < 0) ? Mathf.Abs(vInput) : 0;
 
-        // Calculate how close the car is to top speed
-        // as a number from zero to one
-        float speedFactor = Mathf.InverseLerp(0, maxSpeed, forwardSpeed);
+        
 
-        // Use that to calculate how much torque is available 
-        // (zero torque at top speed)
-        float currentMotorTorque = Mathf.Lerp(motorTorque, 0, speedFactor);
-
-        // …and to calculate how much to steer 
-        // (the car steers more gently at top speed)
-        float currentSteerRange = Mathf.Lerp(steeringRange, steeringRangeAtMaxSpeed, speedFactor);
-
-        // Check whether the user input is in the same direction 
-        // as the car's velocity
-        bool isAccelerating = Mathf.Sign(vInput) == Mathf.Sign(forwardSpeed);
-
-        foreach (var wheel in wheels)
+        foreach (Wheel wheel in wheels)
         {
-            // Apply steering to Wheel colliders that have "Steerable" enabled
-            if (wheel.steerable)
+
+            wheel.wheelCollider.motorTorque = motorForce * vInput;
+                        
+            wheel.UpdateMeshPosition();
+
+            if (wheel.isForward)
             {
-                wheel.WheelCollider.steerAngle = hInput * currentSteerRange;
+                wheel.wheelCollider.steerAngle = hInput * 30;
+                
             }
 
-            if (isAccelerating)
-            {
-                // Apply torque to Wheel colliders that have "Motorized" enabled
-                if (wheel.motorized)
-                {
-                    wheel.WheelCollider.motorTorque = vInput * currentMotorTorque;
-                }
-                wheel.WheelCollider.brakeTorque = 0;
-            }
-            else
-            {
-                // If the user is trying to go in the opposite direction
-                // apply brakes to all wheels
-                wheel.WheelCollider.brakeTorque = Mathf.Abs(vInput) * brakeTorque;
-                wheel.WheelCollider.motorTorque = 0;
-            }
+            wheel.wheelCollider.brakeTorque = breakForce * breakInput * (wheel.isForward ? 0.7f : 0.3f);
+            
         }
     }
 }
