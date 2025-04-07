@@ -335,38 +335,9 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1270563299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &184855957 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8926850512017581139, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-  m_PrefabInstance: {fileID: 4982074742517700012}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &184855959 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6736634865163427009, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-  m_PrefabInstance: {fileID: 4982074742517700012}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &184855961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 184855957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b77e00bb12f4fb4083d7f6346136ed6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yellowObjects: []
-  yellowEmission: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  orangeObjects: []
-  orangeEmission: {r: 1, g: 0.5, b: 0, a: 1}
-  redObjects:
-  - {fileID: 184855959}
-  redEmission: {r: 1, g: 0, b: 0, a: 1}
---- !u!1 &272318692 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2942225043182792683, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
   m_PrefabInstance: {fileID: 4982074742517700012}
   m_PrefabAsset: {fileID: 0}
 --- !u!23 &272318694 stripped
@@ -374,25 +345,6 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 1606855512230608213, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
   m_PrefabInstance: {fileID: 4982074742517700012}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &272318696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272318692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b77e00bb12f4fb4083d7f6346136ed6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yellowObjects:
-  - {fileID: 272318694}
-  yellowEmission: {r: 0.9811321, g: 0.8638183, b: 0.37486652, a: 1}
-  orangeObjects: []
-  orangeEmission: {r: 1, g: 0.5, b: 0, a: 1}
-  redObjects: []
-  redEmission: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &347187598
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,23 +480,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5834600777005874692, guid: 22e374ab9418da04990fc5dc038d6134, type: 3}
---- !u!1 &420386546 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 374885780881794707, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-  m_PrefabInstance: {fileID: 4982074742517700012}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &420386548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420386546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb8fad047c226c498abb15d93bb66ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &428187722
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,6 +588,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1270563299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &455401219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5055460555270674434, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
+  m_PrefabInstance: {fileID: 4982074742517700012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &554123453 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4357496565393445577, guid: 22e374ab9418da04990fc5dc038d6134, type: 3}
@@ -1010,35 +950,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8967113820069872405, guid: 22e374ab9418da04990fc5dc038d6134, type: 3}
---- !u!1 &811649858 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3741670110261457686, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-  m_PrefabInstance: {fileID: 4982074742517700012}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &811649860 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6557262706506867755, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
   m_PrefabInstance: {fileID: 4982074742517700012}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &811649862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 811649858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b77e00bb12f4fb4083d7f6346136ed6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yellowObjects: []
-  yellowEmission: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  orangeObjects: []
-  orangeEmission: {r: 1, g: 0.5, b: 0, a: 1}
-  redObjects:
-  - {fileID: 811649860}
-  redEmission: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &957081886
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,52 +1296,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3392235140227132157, guid: 22e374ab9418da04990fc5dc038d6134, type: 3}
---- !u!1 &990702472 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5509255565793805897, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-  m_PrefabInstance: {fileID: 4982074742517700012}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &990702474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990702472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb8fad047c226c498abb15d93bb66ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1048390331 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5037236326721458670, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-  m_PrefabInstance: {fileID: 4982074742517700012}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1048390333 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 3534147310004847971, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
   m_PrefabInstance: {fileID: 4982074742517700012}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1048390335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1048390331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b77e00bb12f4fb4083d7f6346136ed6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yellowObjects:
-  - {fileID: 1048390333}
-  yellowEmission: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  orangeObjects: []
-  orangeEmission: {r: 1, g: 0.5, b: 0, a: 1}
-  redObjects: []
-  redEmission: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1053236467
 GameObject:
   m_ObjectHideFlags: 3
@@ -1756,35 +1631,11 @@ Transform:
   - {fileID: 347187602}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1287837636 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5784830585137013469, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-  m_PrefabInstance: {fileID: 4982074742517700012}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1287837638 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 3663030884899991297, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
   m_PrefabInstance: {fileID: 4982074742517700012}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1287837640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287837636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b77e00bb12f4fb4083d7f6346136ed6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yellowObjects: []
-  yellowEmission: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  orangeObjects: []
-  orangeEmission: {r: 1, g: 0.5, b: 0, a: 1}
-  redObjects:
-  - {fileID: 1287837638}
-  redEmission: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1406223790
 GameObject:
   m_ObjectHideFlags: 0
@@ -2324,38 +2175,9 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5546826821037295844, guid: 22e374ab9418da04990fc5dc038d6134, type: 3}
---- !u!1 &1579418723 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2875760761361721507, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-  m_PrefabInstance: {fileID: 4982074742517700012}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1579418725 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2924773234903246406, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-  m_PrefabInstance: {fileID: 4982074742517700012}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1579418727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1579418723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b77e00bb12f4fb4083d7f6346136ed6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yellowObjects: []
-  yellowEmission: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  orangeObjects: []
-  orangeEmission: {r: 1, g: 0.5, b: 0, a: 1}
-  redObjects:
-  - {fileID: 1579418725}
-  redEmission: {r: 1, g: 0, b: 0, a: 1}
---- !u!1 &1665915904 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3357318908279459162, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
   m_PrefabInstance: {fileID: 4982074742517700012}
   m_PrefabAsset: {fileID: 0}
 --- !u!23 &1665915906 stripped
@@ -2363,54 +2185,11 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2290427807696665497, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
   m_PrefabInstance: {fileID: 4982074742517700012}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1665915908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665915904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b77e00bb12f4fb4083d7f6346136ed6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yellowObjects: []
-  yellowEmission: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  orangeObjects: []
-  orangeEmission: {r: 1, g: 0.5, b: 0, a: 1}
-  redObjects:
-  - {fileID: 1665915906}
-  redEmission: {r: 1, g: 0, b: 0, a: 1}
---- !u!1 &1710515126 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6760812223451806767, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-  m_PrefabInstance: {fileID: 4982074742517700012}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1710515128 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 8588547880140730394, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
   m_PrefabInstance: {fileID: 4982074742517700012}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1710515130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710515126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b77e00bb12f4fb4083d7f6346136ed6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yellowObjects: []
-  yellowEmission: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  orangeObjects: []
-  orangeEmission: {r: 1, g: 0.5, b: 0, a: 1}
-  redObjects:
-  - {fileID: 1710515128}
-  redEmission: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1715423287
 GameObject:
   m_ObjectHideFlags: 0
@@ -2970,23 +2749,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1876245522 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4574395930465471375, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-  m_PrefabInstance: {fileID: 4982074742517700012}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1876245525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1876245522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb8fad047c226c498abb15d93bb66ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1882295176
 GameObject:
   m_ObjectHideFlags: 3
@@ -3093,23 +2855,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4629335707932469706, guid: 437440a2bdb5bb746afb32cd3a5b236a, type: 3}
---- !u!1 &1954750721 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7894119791966245655, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-  m_PrefabInstance: {fileID: 4982074742517700012}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1954750724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954750721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb8fad047c226c498abb15d93bb66ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2036465863 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2512614431166102398, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
@@ -3137,35 +2882,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1292218593758711960, guid: 437440a2bdb5bb746afb32cd3a5b236a, type: 3}
---- !u!1 &2098266603 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6264823994170164612, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-  m_PrefabInstance: {fileID: 4982074742517700012}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &2098266605 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 848805513858637142, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
   m_PrefabInstance: {fileID: 4982074742517700012}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2098266607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098266603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b77e00bb12f4fb4083d7f6346136ed6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yellowObjects: []
-  yellowEmission: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  orangeObjects:
-  - {fileID: 2098266605}
-  orangeEmission: {r: 1, g: 0.5, b: 0, a: 1}
-  redObjects: []
-  redEmission: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &2141256061
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,57 +3135,48 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5055460555270674434, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9150380285903500827}
     - targetCorrespondingSourceObject: {fileID: 9095349073300508555, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1882769151}
-    - targetCorrespondingSourceObject: {fileID: 6264823994170164612, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2098266607}
     - targetCorrespondingSourceObject: {fileID: 2512614431166102398, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2036465867}
-    - targetCorrespondingSourceObject: {fileID: 2942225043182792683, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 272318696}
-    - targetCorrespondingSourceObject: {fileID: 5037236326721458670, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1048390335}
-    - targetCorrespondingSourceObject: {fileID: 6760812223451806767, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1710515130}
-    - targetCorrespondingSourceObject: {fileID: 3741670110261457686, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 811649862}
-    - targetCorrespondingSourceObject: {fileID: 8926850512017581139, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 184855961}
-    - targetCorrespondingSourceObject: {fileID: 3357318908279459162, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1665915908}
-    - targetCorrespondingSourceObject: {fileID: 5784830585137013469, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1287837640}
-    - targetCorrespondingSourceObject: {fileID: 2875760761361721507, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1579418727}
-    - targetCorrespondingSourceObject: {fileID: 374885780881794707, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 420386548}
-    - targetCorrespondingSourceObject: {fileID: 5509255565793805897, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 990702474}
-    - targetCorrespondingSourceObject: {fileID: 7894119791966245655, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1954750724}
-    - targetCorrespondingSourceObject: {fileID: 4574395930465471375, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1876245525}
   m_SourcePrefab: {fileID: 100100000, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
 --- !u!4 &9150380285903500823 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6234429120397328585, guid: c8e4b5ac85dd20a4b9f344afa8d81fd1, type: 3}
   m_PrefabInstance: {fileID: 4982074742517700012}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9150380285903500827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455401219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b77e00bb12f4fb4083d7f6346136ed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowObjects:
+  - {fileID: 272318694}
+  - {fileID: 1048390333}
+  yellowEmission: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  orangeObjects:
+  - {fileID: 2098266605}
+  orangeEmission: {r: 1, g: 0.5, b: 0, a: 1}
+  redObjects:
+  - {fileID: 1665915906}
+  - {fileID: 1287837638}
+  - {fileID: 1579418725}
+  - {fileID: 1710515128}
+  - {fileID: 811649860}
+  - {fileID: 184855959}
+  redEmission: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

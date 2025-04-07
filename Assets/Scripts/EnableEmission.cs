@@ -2,20 +2,30 @@ using UnityEngine;
 
 public class EnableEmission : MonoBehaviour
 {
-   
-   
-    public Renderer[] yellowObjects;
-    public Color yellowEmission = Color.yellow;
+    private Light[] lights; 
 
-   
-    public Renderer[] orangeObjects;
-    public Color orangeEmission = new Color(1f, 0.5f, 0f); // Оранжевый
+    [SerializeField]
+    private Renderer[] yellowObjects;
+    [SerializeField]
+    private Color yellowEmission = Color.yellow;
 
-    
-    public Renderer[] redObjects;
-    public Color redEmission = Color.red;
+    [SerializeField]
+    private Renderer[] orangeObjects;
+    [SerializeField]
+    private Color orangeEmission = new(1f, 0.5f, 0f);
+
+    [SerializeField]
+    private Renderer[] redObjects;
+    [SerializeField]
+    private Color redEmission = Color.red;
 
     private bool isEmissionOn = false;
+
+    private void Start()
+    {
+        lights = GetComponentsInChildren<Light>();
+        SetLights();
+    }
 
     void Update()
     {
@@ -23,6 +33,15 @@ public class EnableEmission : MonoBehaviour
         {
             isEmissionOn = !isEmissionOn;
             UpdateAllEmission();
+            SetLights();
+        }
+    }
+
+    private void SetLights()
+    {
+        foreach (Light light in lights)
+        {
+            light.enabled = isEmissionOn ? true : false;
         }
     }
 
